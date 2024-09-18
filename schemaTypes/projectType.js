@@ -6,12 +6,16 @@ export const projectType = defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'ProjectName',
+      name: 'projectName',
       type: 'string',
     }),
     defineField({
-        name: 'testimonial',
-        type: 'string'
+        name: "projectImage",
+        type: 'image',
+    }),
+    defineField({
+        name:'projectLink',
+        type:'url'
     })
   ],
 })
