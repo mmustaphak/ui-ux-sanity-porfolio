@@ -8,14 +8,17 @@ export const projectType = defineType({
     defineField({
       name: 'projectName',
       type: 'string',
+      validation: (rule) => rule.required().error("A title is required"),
     }),
     defineField({
-        name: "projectImage",
-        type: 'image',
+      name: 'projectImage',
+      type: 'image',
+      validation: (rule) => rule.required().error("An Image is required"),
     }),
     defineField({
-        name:'projectLink',
-        type:'url'
-    })
+      name: 'projectLink',
+      type: 'url',
+      validation: (rule) => rule.required().error("A link is required"),
+    }),
   ],
 })
