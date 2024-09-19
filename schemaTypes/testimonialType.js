@@ -7,6 +7,10 @@ export const testimonialType = defineType({
         defineField({
             name:'Name',
             type:'string',
+        }),
+        defineField({
+            name:"message",
+            type:"string"
         })
     ]
 })
