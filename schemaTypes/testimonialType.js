@@ -7,10 +7,12 @@ export const testimonialType = defineType({
         defineField({
             name:'Name',
             type:'string',
+            validation: rule => rule.required().error("A value is required")
         }),
         defineField({
             name:"message",
-            type:"string"
+            type:"string",
+            validation: rule => rule.required().error("A value is required")
         })
     ]
 })
