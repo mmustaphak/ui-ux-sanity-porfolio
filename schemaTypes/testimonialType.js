@@ -7,7 +7,7 @@ export const testimonialType = defineType({
     icon: EnvelopeIcon,
     fields: [
         defineField({
-            name:'Name',
+            name:'name',
             type:'string',
             validation: rule => rule.required().error("A value is required")
         }),
